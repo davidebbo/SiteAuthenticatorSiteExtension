@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.applicationHost>
+    <sites>
+      <site name="%XDT_SITENAME%" xdt:Locator="Match(name)">
+        <application path="/" xdt:Locator="Match(path)" xdt:Transform="Remove" />
+        <application path="/" applicationPool="%XDT_APPPOOLNAME%" xdt:Transform="Insert">
+          <virtualDirectory path="/" physicalPath="%HOME%\site\dummy" />
+        </application>
+      </site>
+      <site name="%XDT_SCMSITENAME%" xdt:Locator="Match(name)">
+        <application path="/%XDT_SITE_PATH%" applicationPool="%XDT_APPPOOLNAME%" xdt:Transform="Insert">
+          <virtualDirectory path="/" physicalPath="%HOME%\site\wwwroot" />
+        </application>
+      </site>
+    </sites>
+  </system.applicationHost>
+</configuration>

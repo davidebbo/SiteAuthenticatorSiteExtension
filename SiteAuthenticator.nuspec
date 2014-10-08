@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SiteAuthenticator</id>
+    <version>0.1.0</version>
+    <title>Site authenticator</title>
+    <authors>David Ebbo</authors>
+    <licenseUrl>https://github.com/davidebbo/SiteAuthenticatorSiteExtension/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/davidebbo/SiteAuthenticatorSiteExtension</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This extension exposes the site under the /%XDT_SITE_PATH% path in the scm site, and disables it in the regular site. This causes it to be only accessible to authenticated callers.</description>
+  </metadata>
+  <files>
+    <file src="content\**\*.*" target="content" />
+  </files>
+ </package>
